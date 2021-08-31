@@ -1,0 +1,177 @@
+.app-sidebar.open {
+    transform: translateX(0);
+}
+
+.app-sidebar.fixed {
+    position: fixed;
+    height: 100vh;
+}
+
+.app-sidebar.closed {
+    transition: all .3s ease;
+    width: 80px;
+    min-width: 80px;
+    z-index: 2;
+}
+
+.app-sidebar.sidebar-shadow {
+    box-shadow: 7px 0 60px rgb(0 0 0 / 5%);
+}
+
+/*@media (max-width: 991.98px)*/
+
+.app-sidebar {
+    background-color: var(--dark);
+    width: 280px;
+    z-index: 11;
+    overflow: hidden;
+    min-width: 280px;
+    position: relative;
+    /* margin-top: -60px;
+    padding-top: 60px; */
+    transition: all .2s;
+}
+
+.app-sidebar {
+    width: 280px !important;
+    transform: translateX(-280px);
+    position: fixed;
+}
+
+
+.app-sidebar .scrollbar-sidebar {
+    position: relative;
+    width: 100%;
+    top:0;
+    height: 100%;
+}
+
+
+.ps {
+    overflow: hidden !important; 
+    overflow-anchor: none;
+    touch-action: auto;
+}
+
+.app-sidebar .scrollbar-sidebar > .ps__rail-y { 
+    opacity: 1 !important;
+}
+
+.sidebar.show {
+    transform: translateX(0);
+}
+
+.app-sidebar__inner {
+    margin:0 0 10rem;
+    padding: 5px 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.app-sidebar__heading {
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin: .75rem 0;
+    font-weight: bold;
+    color: #3f6ad8;
+    white-space: nowrap;
+    position: relative;
+}
+
+.app-sidebar__inner li:not(.menu-expand, .seperate){
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+    color: #34a0a4;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* .app-sidebar__inner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+} */
+
+.app-sidebar__inner li a {
+    padding: 20px 15px;
+    color: #34a0a4;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*ELEMENT IN 
+SIDEBAR PART 
+WAIT IN PROGRESSS*/
+.vertical-nav-menu {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+.vertical-nav-menu > li > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+}
+
+.vertical-nav-menu ul {
+    position: relative;
+    list-style: none;
+    padding: 0 0 0 2rem;
+}
+
+.vertical-nav-menu ul.show {
+    padding: 0em 0 0 2rem;
+}
+
+.vertical-nav-menu ul.collapsing { 
+    overflow: hidden;
+    position: relative; 
+    height: 0;
+    transition: height 0.25s;
+}
+
+
+.vertical-nav-menu ul:before {
+    content: '';
+    height: 100%;
+    opacity: 1;
+    width: 3px;
+    background: var(--light);
+    position: absolute;
+    left: 20px;
+    top: 0;
+    border-radius: 15px;
+}
+
+.vertical-nav-menu .collapse:not(.show) {
+    display: none;
+}
+
+.vertical-nav-menu i.arrow {
+    float:right;
+    margin: 2px 13px 0 0;
+    
+    opacity: .6;
+}
+.vertical-nav-menu .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.vertical-nav-menu .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.vertical-nav-menu li.active > a i.arrow {
+    transform: rotate(-135deg);
+}

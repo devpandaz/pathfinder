@@ -1,0 +1,293 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+/* 
+@media only screen and (max-width:900px) {
+}
+
+@media only screen and (max-width:900px) {
+} */
+
+.form-wrapper {
+    margin: 20px 20px 0 20px;
+}
+
+.form-inner {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-inner > div{
+    padding: 0 10px;
+}
+
+.msg {
+    width: 100%;
+    text-align: center;
+}
+
+.result-container {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.result-inner {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 25px;
+    max-width: 1300px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 3rem;
+    justify-content: center;
+    list-style: none;
+}
+
+.lds-container {
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+.list-item {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #e0e1dd;
+    color: #1b263b;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.list-item .book-cover-container {
+    overflow: hidden;
+}
+
+.list-item .book-cover-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item .book-cover {
+    width: 200px;
+}
+
+.list-item .content-preview {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+   
+}
+
+.content-preview h3 {
+    margin: 2px 0;
+}
+
+.list-item .desc-header {
+    padding: 0;
+    margin: 0;
+}
+
+.list-item .show-desc {
+    display: none;
+    width: 140px;
+    height: 40px;
+}
+
+.list-item .desc {
+    overflow: auto;
+    position: relative;
+}
+
+.list-item .desc.collapsing { 
+    overflow: hidden;
+    position: relative; 
+    height: 0;
+    transition: height 0.25s;
+}
+
+.list-item .controller {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.list-item .controller a {
+    font-weight: 600;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color : red;
+    color: white;
+}
+
+.pagination {
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #eeeeee;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: green;
+    color: white;
+}
+
+.pagination-inner a:first-child:not(#btn-wrapper > a) {
+    width: 50px;
+    padding-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.pagination-inner a:last-child:not(#btn-wrapper > a) {
+    width: 50px;
+    padding-right: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.pagination .form-wrapper { 
+    display:inline-block;
+    margin-top: 10px;
+}
+
+#btn-wrapper {
+    display: inline-block;
+}
+
+#btn-wrapper a {
+    margin: 0 2px;
+}
+
+#btn-wrapper a.active {
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .form-inner {
+        align-items: unset;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .result-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-item {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .list-item .book-cover {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .list-item .desc-header {
+        display: none;
+    }
+
+    .list-item .show-desc {
+        display: block;
+        margin: 7px 0;
+    }
+
+    .list-item .desc{
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.checkmark {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top: 5px;
+    background: green;
+    border-radius: 50%;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.checkmark:before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    background-color:#fff;
+    left: 11px;
+    top: 6px;
+}
+
+.checkmark:after{
+    content:"";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color:#fff;
+    left: 8px;
+    top: 12px;
+}
+
+.cross {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height:22px;
+    top: 5px;
+    background: red;
+    border-radius: 50%;
+}
+
+.cross:before, .cross:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    left: 10px;
+    top: 5px;
+    background-color: var(--white);
+}
+
+.cross:before {
+    transform: rotate(45deg);
+}
+
+.cross:after {
+    transform: rotate(-45deg);
+}
+  

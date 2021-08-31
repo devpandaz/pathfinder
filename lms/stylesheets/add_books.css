@@ -1,0 +1,165 @@
+.main-content {
+    padding: 1.5rem 15rem;
+}
+
+.main-content .title {
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.book-info{
+    /* max-width: 500px;  */
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 0;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 0 0 10px 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.book-info .text-center {
+    text-align: center;
+}
+
+.book-info .flex-container {
+    display: flex;
+}
+
+.book-info .row {
+    flex-direction: row;
+}
+
+.book-info .column {
+    flex-direction: column;
+}
+
+.book-info fieldset {
+    width: 50%;
+}
+.book-info .form-field {
+    margin: 15px;
+}
+
+/* .book-info .upper-column .form-field {
+     width  
+}
+
+.book-info .lower-column .area{
+}  */
+
+.book-info fieldset{
+    border: none;
+}
+
+.book-info legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.book-info label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.book-info input, .book-info textarea, .book-info select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+.book-info textarea {
+    height: 150px;
+}
+
+.book-info input:focus, .book-info textarea:focus, .book-info select:focus{
+    background: #d2d9dd;
+}
+
+.book-info select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+
+
+.book-info button[type="submit"], .book-info input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.book-info button[type="submit"]:hover,
+.book-info input[type="button"]:hover
+{
+    background: #109177;
+}
+
+input#file {
+    display: inline-block;
+    width: 100px;
+    padding: 80px 0 0 0;
+    height: 10px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;
+    border-radius: 20px;
+    background-size: 60px 60px;
+}
+
+@media only screen and (max-width:1125px) {
+    .main-content {
+        padding: 1.5rem 10rem;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .main-content {
+        padding: 1.5rem 5rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .main-content {
+        padding: 1.5rem 10px;
+    }
+}

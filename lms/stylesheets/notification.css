@@ -1,0 +1,168 @@
+.box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+.box::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.notification {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.number {
+    font-size: small;
+    height: 22px;
+    width:  22px;
+    line-height: 20px;
+    background-color: #d63031;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -6px;
+    left: 39px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.number:empty {
+   display: none;
+}
+
+.notBtn {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.notification .fas {
+    font-size: 25pt;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.box {
+    width: 400px;
+    height: 0px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: absolute;
+    overflow-y: scroll;
+    padding: 0px;
+    left: -350px;
+    margin-top: 5px;
+    background-color: #F4F4F4;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+    cursor: context-menu;
+}
+
+.notification .fas:hover {
+    color: #d63031;
+}
+
+.notBtn:hover > .box {
+    height: 60vh
+}
+
+.notification .content {
+    padding: 20px;
+    color: black;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.gry {
+    background-color: #F4F4F4;
+}
+
+.top {
+    color: black;
+    padding: 10px
+}
+
+.display {
+    position: relative;
+}
+
+.nothing {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #F4F4F4;
+}
+
+.nothing .fas {
+    text-align: center; 
+    color: black !important;
+    display: block;
+    font-size: 50pt;
+    padding-top: 70px;
+    padding-left: 80px;
+    transition: color 1s;
+}
+
+.cont {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #F4F4F4;
+}
+
+.cont:empty {
+    display: none;
+}
+
+.cent {
+    text-align: center;
+    display: block;
+}
+
+.sec {
+    position: relative;
+    padding: 25px 10px;
+    background-color: #F4F4F4;
+    transition: 0.5s;
+}
+
+.txt {
+    vertical-align: top;
+    font-size: 1.25rem;
+    padding: 5px 10px 0px 5;
+}
+
+.sub {
+    font-size: 1rem;
+    color: grey;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.new {
+    border-style: none none solid none;
+    border-color: red;
+}
+
+.sec:hover {
+    background-color: #BFBFBF;
+}

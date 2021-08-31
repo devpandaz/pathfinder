@@ -1,0 +1,52 @@
+.main-content {
+    padding: 2rem 15rem;
+}
+
+.main-content .content-wrapper {
+    background-color: #e0e1dd;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.book-cover-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-cover {
+    width: 400px;
+}
+
+.main-content .data {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+    .main-content {
+        padding: 2rem 5rem;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-content {
+        padding: 2rem 2rem;
+        font-size: 17px;
+    }
+
+    .book-cover {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-content {
+        padding: 2rem 1rem;
+        font-size: 15px;
+    }
+
+    .book-cover {
+        width: 200px;
+    }
+}
