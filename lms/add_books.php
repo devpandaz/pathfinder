@@ -257,6 +257,7 @@
         window.onload = function() {
           document.getElementById("currency-field").focus();
           document.getElementById("currency-field").blur();
+          window.scrollTo(0, 0);    // scroll to top
         };
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
