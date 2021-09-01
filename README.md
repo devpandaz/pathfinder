@@ -1,3 +1,7 @@
+**UPDATE**: The report and presentation video of this project is [here](https://jPRO-22.github.io/pathfinder/report-and-video.html) now. 
+
+<hr>
+
 **NOTE**: This library management system supposingly is made for our school, but since this the committee need to test and run this web app, the committee need to follow the steps below to simulate the same experience we have in our developers' environment. 
 
 # Installation
