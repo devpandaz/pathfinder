@@ -16,3 +16,5 @@ Choose [pathfinder.sql](https://github.com/jPRO-22/pathfinder/blob/main/lms/path
 4. Once all the accounts are set up, run the program on a server of your choice.
 
 *For admin access, log in with Username: admin (or Email: admin@admin.com) and Password: abcd1234. You may change this admin password later anytime at profile page. 
+
+**Note**: Our product name is "Pathfinder", thus you will see "Pathfinder" everywhere. In our devs' team environment, we setup and used our own Pathfinder accounts for the FB Chat Plugin, Disqus and also Gmail. However, since there's no way we can share access of these accounts, we asked you to setup your own ones. 
