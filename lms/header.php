@@ -132,10 +132,11 @@
                     let response = this.responseText;  
                     let notifications = JSON.parse( response ); // create JSON object from response 
                     const container = document.getElementsByClassName("cont")[0];
+                    const nothing = document.getElementsByClassName("nothing")[0];
 
                     let i, row, num = 0;
-                    if(!notifications.length) {
-                        container
+                    if(notifications.length) {
+                        nothing.style.display = "none";
                     }
                     for (i = 0; i < notifications.length; i++){  
                         let notificationId = notifications[i].id;

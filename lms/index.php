@@ -29,8 +29,6 @@ include_once 'includes/dbh.inc.php';
                         $isbn = $tmp[0];
                         $expirydate = $tmp[1];
 
-                        echo $isbn . " " . $expirydate;
-
                         $diff = (strtotime($expirydate) - strtotime('today')) / 24 / 60 / 60;
 
                         if ($diff < 0) {
