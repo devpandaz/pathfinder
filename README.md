@@ -1,6 +1,11 @@
 **NOTE**: This library management system supposingly is made for our school, but since this the committee need to test and run this web app, the committee need to follow the steps below to simulate the same experience we have in our developers' environment. 
 
 # Installation
+Download [XAMPP](https://www.apachefriends.org/index.html). This will be your server.
+Go to [phpmyadmin at localhost](http://localhost/phpmyadmin/). Select the import tab.
+![Import Tab](https://github.com/jPRO-22/pathfinder/blob/main/readme-imgs/phpmyadmin-import-tab.jpg?raw=true)
+Choose file. 
+![Choose file](https://github.com/jPRO-22/pathfinder/blob/main/readme-imgs/phpmyadmin-import-choose-file.jpg?raw=true)
 
 **Download this repository by ```git clone https://github.com/jPRO-22/pathfinder.git``` or click "Download zip". Move the lms folder inside this pathfinder repository to your xampp htdocs folder and rename the lms folder to ```pathfinder```.**
 
