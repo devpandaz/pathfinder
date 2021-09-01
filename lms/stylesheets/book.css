@@ -50,3 +50,14 @@
         width: 200px;
     }
 }
+
+a.styled-button {
+    color: black;; 
+    text-decoration: underline;
+    margin: 15px 0;
+    transition: color 0.35s;
+}
+
+a.styled-button:hover {
+    color: blue;
+}
