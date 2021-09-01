@@ -141,7 +141,7 @@
                         <td class='col_expiry'>$expirydate</td>
                         <td class='col_status'>$status</td>
                         <td class='col_command'>
-                            <a href='includes/return-book.inc.php?index=$i&isbn=$isbn' class='return' data-title='$title' data-price='$price' data-image='$image' data-fine='$fine'>Return</a>
+                            <a href='includes/return-book.inc.php?index=$i&isbn=$isbn' class='return' data-title='$title' data-price='$price' data-image='$image' data-fine='$fine' data-days='$diff'>Return</a>
                         </td>
                     </tr>";
                     $i++;
@@ -164,6 +164,7 @@
                 let src;
                 let title = this.dataset.title;
                 let fine = this.dataset.fine;
+                let days = Math.abs(this.dataset.days);
                 let image = this.dataset.image;
                 let price = this.dataset.price;
 
@@ -187,7 +188,8 @@
                         </div>
                         <div class="right">
                             <h4>You have a fine...</h4>
-                            <p>Pay fine of RM${fine.toFixed(2)} due to late return of the book \"${title}\"?</p>
+                            <p style="margin: 0;">You have been late for ${days} days</p>
+                            <p style="margin: 0;">Pay fine of RM${fine.toFixed(2)} due to late return of the book \"${title}\"?</p>
                             <p class="note">Note: If you lost this book, please pay RM${price}</p>
                             <button class="modal-close">Cancel</button>
                             <button class="modal-confirm">Confirm</button>
@@ -205,7 +207,7 @@
                         </div>
                         <div class="right">
                             <h4>Are you sure...</h4>
-                            <p>You want to return \"${title}\"?</p>
+                            <p style="margin: 0;">You want to return \"${title}\"?</p>
                             <p class="note">Note: If you lost this book, please pay extra RM${price}</p>
                             <button class="modal-close">Cancel</button>
                             <button class="modal-confirm">Confirm</button>
