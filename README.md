@@ -7,7 +7,7 @@
 Download [XAMPP](https://www.apachefriends.org/index.html). This will be your server.
 Go to [phpmyadmin at localhost](http://localhost/phpmyadmin/). Select the import tab.
 ![Import Tab](https://github.com/jPRO-22/pathfinder/blob/main/readme-imgs/phpmyadmin-import-tab.jpg?raw=true)
-Choose pathfinder.sql from the pathfinder folder in your htdocs folder. 
+Choose [pathfinder.sql](https://github.com/jPRO-22/pathfinder/blob/main/lms/pathfinder.sql) from the pathfinder folder in your htdocs folder. (You will have this pathfinder folder in your htdocs folder if you followed the steps above. )
 ![Choose file](https://github.com/jPRO-22/pathfinder/blob/main/readme-imgs/phpmyadmin-import-choose-file.jpg?raw=true)
 
 1. Create a new Facebook page and setup the Facebook Chat Plugin. This is for the live chat features of this web app that the users can communicate with/seek live help from the authorities of the Facebook page. Once done setting up the chat plugin, change the code inside the line ```chatbox.setAttribute("page_id", "[code_here]");``` at [header.php](https://github.com/jPRO-22/pathfinder/blob/main/lms/header.php) (line 34) to your Facebook Chat Plugin code. 
