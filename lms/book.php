@@ -92,8 +92,8 @@ function invalidISBN($isbn_no) {
             
                 if (!isset($_SESSION["userid"])) {
                     echo "Uh-oh, you are not logged in! Log in to borrow the book!<br>";
-                    echo "<a href='login.php'>Log in now</a><br>";
-                    echo "Don't have an account? <a href='signup.php'>Sign up now</a>";
+                    echo "<a class='styled-button' href='login.php'>Log in now</a><br>";
+                    echo "Don't have an account? <a class='styled-button' href='signup.php'>Sign up now</a>";
                     exit;
                 } else {
 
@@ -104,15 +104,15 @@ function invalidISBN($isbn_no) {
 
                     if (((int)$book["booksQuantity"] - (int)$book["booksLoaned"] - (int)$book["booksPending"] > 0)) {      // to check if book available, that means still got copies of book remained
                         if ($user["usersType"] == "admin" or (int)$user["bookQuota"] < $maxQuota) {
-                            echo '<a href="includes/borrow-book.inc.php?id=' . $target . '">Borrow this book</a><br>';
+                            echo '<a class="styled-button" href="includes/borrow-book.inc.php?id=' . $target . '">Borrow this book</a><br>';
                         } else {
-                            echo '<div class="alert alert-warning" role="alert">You already reached the max quota of books that you can borrow. If you wish to borrow this book, kindly return some books at <a href="profile.php" class="alert-link">your profile</a> first.</div>';
+                            echo '<div class="alert alert-warning" role="alert">You already reached the max quota of books that you can borrow. If you wish to borrow this book, kindly return some books at <a class="styled-button" href="profile.php" class="alert-link">your profile</a> first.</div>';
                         }
                     } else {
                         echo '<div class="alert alert-warning" role="alert">This book is out of stock. Please contact the admin if you think this is a mistake.</div>';
                     }
                 }
-                echo 'Want to return this book? Return it <a href="profile.php#">here</a> at your profile.';
+                echo 'Want to return this book? Return it <a class="styled-button" href="profile.php#">here</a> at your profile.';
             ?>
         </div>
     </div>
