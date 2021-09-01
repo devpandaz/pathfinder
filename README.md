@@ -9,6 +9,7 @@ Go to [phpmyadmin at localhost](http://localhost/phpmyadmin/). Select the import
 ![Import Tab](https://github.com/jPRO-22/pathfinder/blob/main/readme-imgs/phpmyadmin-import-tab.jpg?raw=true)
 Choose [pathfinder.sql](https://github.com/jPRO-22/pathfinder/blob/main/lms/pathfinder.sql) from the pathfinder folder in your htdocs folder. (You will have this pathfinder folder in your htdocs folder if you followed the steps above. )
 ![Choose file](https://github.com/jPRO-22/pathfinder/blob/main/readme-imgs/phpmyadmin-import-choose-file.jpg?raw=true)
+Click "Go". 
 
 1. Create a new Facebook page and setup the Facebook Chat Plugin. This is for the live chat features of this web app that the users can communicate with/seek live help from the authorities of the Facebook page. Once done setting up the chat plugin, change the code inside the line ```chatbox.setAttribute("page_id", "[code_here]");``` at [header.php](https://github.com/jPRO-22/pathfinder/blob/main/lms/header.php) (line 34) to your Facebook Chat Plugin code. 
 2. Create a [Disqus](https://disqus.com/) account. Set up a new Disqus site. Once done, change s.src at [book.php](https://github.com/jPRO-22/pathfinder/blob/main/lms/book.php) (line 134: ```s.src = 'https://pathfinderlibms.disqus.com/embed.js';```) to the embed.js file of your Disqus site (you can get the embed source during setup/installation process of your Disqus site). 
@@ -18,12 +19,12 @@ Choose [pathfinder.sql](https://github.com/jPRO-22/pathfinder/blob/main/lms/path
 6. Once all the accounts are set up: 
     1. Start localhost. 
     2. run ```ngrok http 443``` at Command Prompt. 
-    3. Copy the generated link and paste it to your browser. Add ```pathfinder``` behind the ngrok link. Thus it would become ```https://[code].ngrok.io/pathfinder```. Press enter and the home page of this web app will come up. 
-    4. If installing for the first time, add this domain to [.env file](https://github.com/jPRO-22/pathfinder/blob/main/lms/.env) (line 2: ```DOMAIN = [ngrok domain here]```) also. 
+    3. If installing for the first time, add the generated domain to [.env file](https://github.com/jPRO-22/pathfinder/blob/main/lms/.env) (line 2: ```DOMAIN = [ngrok domain here]```) also. 
+    4. Copy the generated domain and paste it to your browser. Add ```pathfinder``` behind the ngrok domain. Thus it would become ```https://[code].ngrok.io/pathfinder```. Press enter and the home page of this web app will come up. 
     
     Since we don't have a paid server to host our web app, we ask you to use ngrok locally. Thus, the domain link would change everytime you run a new ```ngrok http``` command. Therefore, you have to actually change the domain to the generated ngrok domain at your Disqus site and your FB Chat Plugin "Website Domain" EVERY SINGLE TIME. 
     ALSO, REMEMBER TO CHANGE THE DOMAIN EVERY TIME AT [.env file](https://github.com/jPRO-22/pathfinder/blob/main/lms/.env) (line 2: ```DOMAIN = [ngrok domain here]```). 
 
-*For admin access, log in with Username: admin (or Email: admin@admin.com) and Password: abcd1234. You may change this admin password later anytime at profile page. 
+*For admin access to this library system, log in with Username: admin (or Email: admin@admin.com) and Password: abcd1234. You may change this admin password later anytime at profile page. 
 
 **Note**: Our product name is "Pathfinder", thus you will see "Pathfinder" everywhere. In our devs' team environment, we setup and used our own Pathfinder accounts for the FB Chat Plugin, Disqus and also Gmail. However, since there's no way we can share access of these accounts, we asked you to setup your own ones. 
