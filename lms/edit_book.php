@@ -47,8 +47,6 @@ function invalidISBN($isbn_no) {
                             $book = mysqli_fetch_all($res, MYSQLI_ASSOC)[0];
                         ?>
 
-                        <div class="page-wrapper">
-                            <div class="main-content">
                                 <!-- notices -->
                                 <?php
                                     if (isset($_SESSION["edit-book-success-msg"])) {
@@ -341,8 +339,6 @@ function invalidISBN($isbn_no) {
                                         <button type="submit" id="btnSubmit" name="btnSubmit">Change Shelf</button>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
 
                         <?php
                     }
