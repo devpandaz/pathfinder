@@ -29,6 +29,6 @@ Click "Go".
     Since we don't have a paid server to host our web app, we ask you to use ngrok locally. Thus, the domain link would change everytime you run a new ```ngrok http``` command. Therefore, you have to actually change the domain to the generated ngrok domain at your Disqus site and your FB Chat Plugin "Website Domain" EVERY SINGLE TIME. 
     ALSO, REMEMBER TO CHANGE THE DOMAIN EVERY TIME AT [.env file](https://github.com/jPRO-22/pathfinder/blob/main/lms/.env) (line 2: ```DOMAIN = [ngrok domain here]```). 
 
-*For admin access to this library system, log in with Username: admin (or Email: admin@admin.com) and Password: 1234abcd. You may change this admin password later anytime at profile page. 
+*For admin access to this library system, log in with Username: admin (or Email: admin@admin.com) and Password: abcd1234. You may change this admin password later anytime at profile page. 
 
 **Note**: Our product name is "Pathfinder", thus you will see "Pathfinder" everywhere. In our devs' team environment, we setup and used our own Pathfinder accounts for the FB Chat Plugin, Disqus and also Gmail. However, since there's no way we can share access of these accounts, we asked you to setup your own ones. 
