@@ -1,7 +1,4 @@
 **UPDATE**: The report and presentation video of this project is [here](https://jPRO-22.github.io/pathfinder/report-and-video.html) now. 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <hr>
 
@@ -35,24 +32,3 @@ Click "Go".
 *For admin access to this library system, log in with Username: admin (or Email: admin@admin.com) and Password: 1234abcd. You may change this admin password later anytime at profile page. 
 
 **Note**: Our product name is "Pathfinder", thus you will see "Pathfinder" everywhere. In our devs' team environment, we setup and used our own Pathfinder accounts for the FB Chat Plugin, Disqus and also Gmail. However, since there's no way we can share access of these accounts, we asked you to setup your own ones. 
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/TheLoneGuy"><img src="https://avatars.githubusercontent.com/u/87025141?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tan Ting Hong</b></sub></a><br /><a href="https://github.com/jPRO-22/pathfinder/commits?author=TheLoneGuy" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/jPRO-22"><img src="https://avatars.githubusercontent.com/u/76772354?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jack Yeo</b></sub></a><br /><a href="https://github.com/jPRO-22/pathfinder/commits?author=jPRO-22" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
