@@ -1,4 +1,3 @@
-**UPDATE**: The report and presentation video of this project is [here](https://jPRO-22.github.io/pathfinder/report-and-video.html) now. 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -35,6 +34,9 @@ Click "Go".
 *For admin access to this library system, log in with Username: admin (or Email: admin@admin.com) and Password: 1234abcd. You may change this admin password later anytime at profile page. 
 
 **Note**: Our product name is "Pathfinder", thus you will see "Pathfinder" everywhere. In our devs' team environment, we setup and used our own Pathfinder accounts for the FB Chat Plugin, Disqus and also Gmail. However, since there's no way we can share access of these accounts, we asked you to setup your own ones. 
+
+# Report and Presentation Video
+Click [here](https://jPRO-22.github.io/pathfinder/report-and-video.html) for the report and presentation video of this project. 
 
 ## Contributors ✨
 
