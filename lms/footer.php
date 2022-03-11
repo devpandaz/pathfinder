@@ -9,7 +9,7 @@
                         <nav>
                             <a title="Follow and like us on Facebook" href="https://www.facebook.com/Pathfinder-102055062196215/" target="_blank"><span class="fab fa-facebook-f"></span></a>
                             <a title="Follow and like us on Instagram" href="https://www.instagram.com/pathfinderlibms/" target="_blank"><span class="fab fa-instagram"></span></a>
-                            <a title="Give us a star on Github" href="https://github.com/jPRO-22/pathfinder" target="_blank"><span class="fab fa-github"></span></a>
+                            <a title="Give us a star on Github" href="https://github.com/devpandaz/pathfinder" target="_blank"><span class="fab fa-github"></span></a>
                         </nav>
                     </div>
                 </div>
